@@ -1,0 +1,126 @@
+/* your css code */
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 60px;
+  width: 100%;
+  background: url(./bg.jpg) center/100% no-repeat;
+  background-blend-mode: multiply;
+  background-size: 100% auto;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset -2px 5px 26px 21px rgba(0, 0, 0, 0.75);
+  z-index: 45;
+}
+
+.logoWrapper {
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  color: #ff0000;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.form::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(./search.png);
+  background-size: 10px 10px;
+  top: 28%;
+  right: 18%;
+  width: 10px;
+  height: 10px;
+  z-index: 5;
+}
+
+.input {
+  border: solid 2px #2c027e;
+  margin-right: 14px;
+  width: 90px;
+  height: 16px;
+  border-radius: 30px;
+  outline: none;
+  transition: ease-in 0.1s;
+  padding-left: 8px;
+  font-size: 10px;
+}
+
+.input:focus .logo {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .input {
+    border: solid 3px #2c027e;
+    margin-right: 20px;
+    width: 130px;
+    height: 20px;
+    padding-left: 8px;
+    padding-bottom: 1px;
+    font-size: 10px;
+  }
+
+  .form::before {
+    background-size: 15px 15px;
+    top: 21%;
+    right: 17%;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 23px;
+    padding-top: 3px;
+    padding-left: 8px;
+  }
+
+  .input {
+    margin-right: 24px;
+    width: 160px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .form::before {
+    background-size: 15px 15px;
+    top: 21%;
+    right: 17%;
+    width: 15px;
+    height: 15px;
+  }
+}

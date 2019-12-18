@@ -1,0 +1,14 @@
+/* your css code */
+
+.input {
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+}
+
+.input:focus {
+  transition: ease-in 0.1s;
+  width: 130px;
+  background-color: #fff;
+  border-color: #6dcff6;
+}

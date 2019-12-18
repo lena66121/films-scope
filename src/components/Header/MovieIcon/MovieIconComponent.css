@@ -1,0 +1,21 @@
+.movieIcon {
+  padding-left: 15px;
+  width: 25px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .movieIcon {
+    padding-left: 20px;
+    width: 30px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .movieIcon {
+    padding-left: 20px;
+    width: 30px;
+    height: 35px;
+  }
+}

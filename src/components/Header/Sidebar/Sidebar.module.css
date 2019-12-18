@@ -1,0 +1,8 @@
+/* your css code */
+
+.SidebarWrapper {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50vh;
+  z-index: 4;
+}
